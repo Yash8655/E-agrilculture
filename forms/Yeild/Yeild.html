@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Messages | Firebase</title>
+    <link rel="stylesheet" href="Yeild.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2 id="heading">Yeild ready form</h2> 
+        <form action="" id="Yeild"> 
+                             
+            <div class="alert">Your message sent</div>
+
+            <div class="inputBox">
+               
+                <input type="text" id="farmid" placeholder="Enter your id....." />
+            </div>
+
+            <div class="inputBox">
+                <label for="crops"> <b> Choose a Crop :</b> </label>
+
+                <select name="crops" id="crops"> 
+                  <option value="Wheat">Wheat</option> 
+                  <option value="rice">Rice</option>      
+                  <option value="barley">Barley</option>
+                  <option value="corn">Corn</option> 
+                  <option value="paddy">Paddy</option> 
+                  <option value="oat">Oat</option>
+                  <option value="blackgram">Black Gram </option> 
+                  <option value="kidneybeans">Kidney Beans  </option> 
+                  <option value="apricot">Apricot</option>
+                  <option value="soyabean">Soyabean</option>
+                  <option value="cowpea">Cow pea </option>
+                  <option value="ridgegourd">Ridgegourd</option>
+                  <option value="bittergourd">BitterGourd</option>
+                  <option value="brinjal">Brinjal</option>          
+                  <option value="ladyfinger">Ladyfinger</option>
+                <input type="text" id="crop" placeholder="Which crop you grow....." />
+            </div>
+                                        
+            <div class="inputBox">      
+                                                          
+                <input type="text" id="quan" placeholder="How much crop you have(in tons)...." />   
+            </div>                          
+    
+           
+
+            <div class="inputBox">
+                <input id="from" type="date" placeholder="From when u have crop to sell..." />
+            </div>
+
+            <div class="inputBox">
+                <input type="date" id="to" placeholder="For how long u have crop....." />
+            </div>
+
+            <div class="inputBox">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="Yeild.js"></script>
+</body>
+
+</html>

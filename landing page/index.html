@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>parallox website</title>
+         
+</head>
+
+<body>
+
+    <header id="header">
+        <a href="#" class="logo">E-AGRI</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <!-- <li><a href="#">About</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Contact</a></li> -->
+        </ul>
+    </header>
+    <section>
+        <h2 id="text"><span>It's time for a cutting-edge</span><br>Farming</h2>
+        <img src="C:\Users\vishn\OneDrive\Desktop\Team\Hackathon\landing page\bird1.png" id="bird1">
+        <img src="C:\Users\vishn\OneDrive\Desktop\Team\Hackathon\landing page\bird2.png" id="bird2">
+        <img src="C:\Users\vishn\OneDrive\Desktop\Team\Hackathon\landing page\forest.png" id="forest">
+        <a href="file:///C:/Users/vishn/OneDrive/Desktop/Team/Hackathon/sidebar.html#" id="btn">Explore</a>
+        <img src="C:\Users\vishn\OneDrive\Desktop\Team\Hackathon\landing page\rocks.png" id="rocks">
+        <img src="C:\Users\vishn\OneDrive\Desktop\Team\Hackathon\landing page\water.png" id="water"> 
+    </section>
+    
+    <div class="sec">
+        <h2>About the center</h2>
+        <h4>According to the government there are around 14 crore farmers in India and out of these only 3 crore knows how to use technology to their favour. 
+            Introducing an app or website and hoping that all the farmers get access to the data is pointless.
+            So, to solve this problem the concept Agri Centre emerged.
+            The Agri Centre will host all the farmers and middlemen in that area and will provide/collect data.
+            The Mandi rates of all the states and districts will be displayed at the Agri Centre. These rates can help the farmers negotiate better.</h4>
+            
+            <br>
+            <h2>About the Website</h2>
+            <h4>The website provides management capabilities to the employees of the Agri Centre to allow keeping record of the farmers in that area.
+                Access to information also becomes easy as the data becomes centralized.
+                Different forms regarding the yield, yield availability, tools/vehicles for rent and to rent also becomes available to all the parties. These forms can be filed at the centre itself.
+                Different government schemes can be searched on the website and reference to the real context can be found.
+                The data from the database can be used to match the required criteria and send SMS to alert or inform them about the government schemes</h4>
+        </div>
+
+    
+
+    <script>
+        let text=document.getElementById('text');
+        let bird1=document.getElementById('bird1');
+        let bird2=document.getElementById('bird2');
+        let btn=document.getElementById('btn');
+        let rocks=document.getElementById('rocks');
+        let forest=document.getElementById('forest');
+        let water=document.getElementById('water');
+        let header=document.getElementById('header');
+
+        window.addEventListener('scroll', function(){
+            let value=window.scrollY;
+            text.style.top=50+value*-0.5+'%';
+            bird1.style.top=value*-1.5+'px';
+            bird1.style.left=value*2+'px';
+            bird2.style.top=value*-1.5+'px';
+            bird2.style.left=value*-5+'px';
+            btn.style.marginTop=value*1.5+'px';
+            rocks.style.top=value*-0.12+'px';
+            forest.style.top=valaue*0.25+'px';
+            header.style.top=value*0.5+'px';
+        })
+    </script>
+</body>
+
+</html>

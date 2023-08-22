@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Messages | Firebase</title>
+    <link rel="stylesheet" href="get.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>EQUIPMENT GET:</h2>
+        <form action="" id="getform">
+
+           
+            <div class="alert">Your message sent</div>
+
+            <div class="inputBox">
+                <h4>Equipment name:</h4> 
+                <input type="text" id="name" placeholder="Your equipment...." />
+            </div>
+
+            <div class="inputBox">
+               <h4>From :</h4> 
+                <input type="date" id="date_from" placeholder="Your date....." />
+            </div>
+
+            <div class="inputBox">
+                <h4>Upto :</h4>
+                <input id="date_upto" type="date" placeholder="Your date..." />
+            </div>
+
+            <div class="inputBox">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="get.js"></script>
+</body>
+
+</html>
